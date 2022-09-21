@@ -38,6 +38,9 @@ form{
   padding: 2rem;
 
   border-radius: 8px;
+
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.4s;
 }
 
 
@@ -67,6 +70,9 @@ input{
 
 .title{
   font-size: 20px;
+  transition: all 0.3s ease;
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.2s;
   
 }
 
@@ -83,6 +89,9 @@ button{
   text-transform: uppercase;
 
   font-weight: 700;
+
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.6s;
 }
 
 
@@ -121,6 +130,8 @@ button{
 
 .developer{
   margin-top: 12rem;
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.8s;
 }
 
 
@@ -130,3 +141,21 @@ a{
   color: #7fa3e0;
   font-weight: 700;
 }
+
+
+@keyframes fromLeft{
+
+  from{
+    transform: translateX(-300px);
+    opacity: 0;
+
+  }
+
+  to{
+      transform: translateX(0);
+      opacity: 1;
+  }
+
+
+}
+
