@@ -15,11 +15,13 @@ body{
   flex-direction: column;
 
   font-family: sans-serif;
+
+  overflow: hidden;
 }
 
 .container{
 
-  margin-top: 5rem;
+  margin-top: 2rem;
   
   display: flex;
   align-items: center;
@@ -99,7 +101,7 @@ button{
   border: 2px solid #fff;
   width: 300px;
   
-  margin: 2rem 0;
+  margin-top: 2rem ;
 
   border-radius: 8px;
 
@@ -118,12 +120,14 @@ button{
   padding: 0 1rem;
 }
 
+.developer{
+  margin-bottom: 3rem;
+}
+
 
 .flag p{
- 
   display: block;
   line-height: 20px;
-
 }
 
 .flag.visible{
