@@ -7,7 +7,7 @@ function calculate() {
   const result = document.getElementById('result')
   const ratingImc = document.getElementById('ratingImc')
 
-  if ((imc <= 0) || (imc == Number.POSITIVE_INFINITY)) {
+  if ((imc == 0) || (imc == Number.POSITIVE_INFINITY)) {
     result.innerHTML = ''
     ratingImc.innerHTML = 'Preencha os campos corretamente.'
 
@@ -20,11 +20,11 @@ function calculate() {
     result.innerHTML = 'Seu IMC = ' + imc.toFixed(2)
     ratingImc.innerHTML = 'A classificação do seu IMC é SAUDÁVEL.'
 
-  } else if ((imc > 25) && (imc <= 29.9)) {
+  } else if ((imc > 24.9) && (imc <= 29.9)) {
     result.innerHTML = 'Seu IMC = ' + imc.toFixed(2)
     ratingImc.innerHTML = 'A classificação do seu IMC é  SOBREPESO.'
 
-  } else if ((imc > 30) && (imc <= 39.9)) {
+  } else if ((imc > 29.9) && (imc <= 39.9)) {
     result.innerHTML = 'Seu IMC = ' + imc.toFixed(2)
     ratingImc.innerHTML = 'A classificação do seu IMC é OBESIDADE.'
 
@@ -34,15 +34,14 @@ function calculate() {
 
   } else {
     result.innerHTML = ''
-    ratingImc.innerHTML = 'Preencha os campos corretamente'
+    ratingImc.innerHTML = 'Preencha os campos corretamente.'
   }
 
   flag.classList.add('visible')
 
+  console.log(imc)
 
 
-  document.getElementById('height').value = ''
-  document.getElementById('weigh').value = ''
 
 }
 

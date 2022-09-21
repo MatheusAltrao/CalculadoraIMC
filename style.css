@@ -114,6 +114,8 @@ button{
   text-align: center;
 
   visibility: hidden;
+
+  padding: 0 1rem;
 }
 
 
@@ -121,6 +123,7 @@ button{
  
   display: block;
   line-height: 20px;
+
 }
 
 .flag.visible{
