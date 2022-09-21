@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora IMC</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="shortcut icon" href="assets/fiveiconsemfundo.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="title">Calculadora IMC</h1>
+
+    <form>
+
+      <div class="inputs">
+        <label for="height">Altura (ex : 1,70)</label>
+        <input id="height" type="number" name="height" placeholder="Digite sua altura">
+      </div>
+
+
+      <br>
+      <br>
+
+      <div class="inputs">
+        <label for="weigh">Peso (ex : 69,2)</label>
+        <input id="weigh" type="number" name="weigh" placeholder="Digite seu peso">
+      </div>
+
+    </form>
+
+
+    <button onclick="calculate()">Calcular</button>
+
+    <div id="flag" class="flag">
+      <h2 id="result" class="title"></h2>
+      <p id="ratingImc"></p>
+    </div>
+
+    <br>
+    <br>
+  </div>
+
+
+
+
+
+  <div class="developer">
+
+    <p>Desenvolvido por <a href="#">Matheus Altrão</a></p>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
